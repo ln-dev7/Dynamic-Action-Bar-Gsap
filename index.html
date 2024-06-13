@@ -10,21 +10,218 @@
 
 <body>
   <div class="relative w-full h-screen overflow-hidden" id="app">
-    <div class="absolute top-0 w-full flex items-center justify-between py-2 px-6 bg-black text-white font-semibold">
-      <a class="underline underline-offset-2" href="https://x.com/ln_dev7">
+    <div
+      class="absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center justify-center border-2 border-black/10 gap-4 py-3 px-6 rounded-full bg-[#fff] text-slate-900 font-semibold">
+      <a class="underline underline-offset-2" href="https://x.com/ln_dev7" title="Code by LN">
         Code by LN
       </a>
-      <a class="underline underline-offset-2" href="https://github.com/ln-dev7/">
+      <span class="w-1.5 h-1.5 bg-slate-700 rounded-full block"></span>
+      <a class="underline underline-offset-2" href="https://github.com/ln-dev7/Dynamic-Action-Bar" title="GitHub">
         GitHub
       </a>
-      <a class="underline underline-offset-2" href="#">
-        Figma
+      <span class="w-1.5 h-1.5 bg-slate-700 rounded-full block"></span>
+      <a class="underline underline-offset-2" href="https://x.com/henrikruscon/status/1800862855648129449"
+        title="Credits">
+        Credits
       </a>
     </div>
     <div class="w-full h-full flex items-center justify-center p-4">
-      <h1 className="text-3xl font-bold underline">
-        FUN ANIMATION TEMPLATE
-      </h1>
+      <div class="relative w-[800px] h-[500px] rounded-[40px] bg-bg-gradient border-4 border-black/10 overflow-hidden">
+        <div
+          class="flex items-center justify-center gap-2 rounded-2xl bg-transparent w-[410px] absolute -translate-x-1/2 left-1/2 bottom-14 z-[2]">
+          <button
+            class="item item-1 flex items-center justify-center gap-2 hover:bg-zinc-950 hover:text-white duration-300 transition-colors py-3 px-4 rounded-2xl">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z" />
+            </svg>
+            <span class="font-bold">Apps</span>
+          </button>
+          <button
+            class="item item-2 flex items-center justify-center gap-2 hover:bg-zinc-950 hover:text-white duration-300 transition-colors py-3 px-4 rounded-2xl">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+            </svg>
+            <span class="font-bold">Components</span>
+          </button>
+          <button
+            class="item item-3 flex items-center justify-center gap-2 hover:bg-zinc-950 hover:text-white duration-300 transition-colors py-3 px-4 rounded-2xl">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+            </svg>
+            <span class="font-bold">Notes</span>
+          </button>
+        </div>
+        <div
+          class="absolute bg-black/5 backdrop-blur-xl w-[410px] h-12 -translate-x-1/2 left-1/2 bottom-14 overflow-hidden rounded-2xl container-block">
+          <div class="p-4 flex flex-col items-center absolute w-full bottom-16 opacity-0 details">
+            <div
+              class="w-[95%] flex items-center gap-3 cursor-pointer hover:bg-black/5 rounded-2xl py-3 hover:px-3 duration-300">
+              <img src="/gather.svg" alt="gather" class="w-16 rounded-xl object-cover h-16 shrink-0" />
+              <div class="w-full flex flex-col items-start">
+                <p class="font-bold">Gather</p>
+                <p class="opacity-80">Virtual Office</p>
+              </div>
+              <span class="block shrink-0 py-1 px-2 text-sm rounded-lg opacity-80 border border-black/50">
+                Mac
+              </span>
+            </div>
+            <div
+              class="w-[95%] flex items-center gap-3 cursor-pointer hover:bg-black/5 rounded-2xl py-3 hover:px-3 duration-300">
+              <img src="/slack.svg" alt="gather" class="w-16 rounded-xl object-cover h-16 shrink-0" />
+              <div class="w-full flex flex-col items-start">
+                <p class="font-bold">Slack</p>
+                <p class="opacity-80">Communication App</p>
+              </div>
+              <span class="block shrink-0 py-1 px-2 text-sm rounded-lg opacity-80 border border-black/50">
+                Windows
+              </span>
+            </div>
+            <div class="h-[2px] w-[95%] bg-black/10 mt-4"></div>
+          </div>
+          <div class="py-4 px-6 flex flex-col items-center absolute w-full bottom-16 opacity-0 details gap-1">
+            <div
+              class="flex items-center justify-between w-full gap-3 cursor-pointer hover:bg-black/5 rounded-2xl py-2 hover:px-3 hover:w-[95%] duration-300 mx-auto">
+              <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-6 shrink-0 opacity-75">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                </svg>
+                <span class="font-bold">Action Bar</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="block shrink-0 py-1 px-2 text-sm rounded-lg opacity-80 border border-black/50">
+                  Dynamic
+                </span>
+                <span>
+                  06 - 12
+                </span>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between w-full gap-3 cursor-pointer hover:bg-black/5 rounded-2xl py-2 hover:px-3 hover:w-[95%] duration-300 mx-auto">
+              <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-6 shrink-0 opacity-75">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                </svg>
+                <span class="font-bold">Image Expand</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="block shrink-0 py-1 px-2 text-sm rounded-lg opacity-80 border border-black/50">
+                  Overlay
+                </span>
+                <span>
+                  05 - 12
+                </span>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-between w-full gap-3 cursor-pointer hover:bg-black/5 rounded-2xl py-2 hover:px-3 hover:w-[95%] duration-300 mx-auto">
+              <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-6 shrink-0 opacity-75">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                </svg>
+                <span class="font-bold">Read Time</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="block shrink-0 py-1 px-2 text-sm rounded-lg opacity-80 border border-black/50">
+                  Scroll
+                </span>
+                <span>
+                  04 - 12
+                </span>
+              </div>
+            </div>
+            <div class="h-[2px] w-full bg-black/10 mt-4"></div>
+          </div>
+          <div class="p-4 flex flex-col items-center absolute w-full bottom-16 opacity-0 details gap-1">
+            <div
+              class="flex items-center justify-between w-full gap-3 cursor-pointer hover:bg-black/5 rounded-2xl py-2 hover:px-3 hover:w-[95%] duration-300 mx-auto">
+              <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                </svg>
+                <span class="font-bold">Changelog using GitHub</span>
+              </div>
+              <span class="block">
+                Jun, 24
+              </span>
+            </div>
+            <div
+              class="flex items-center justify-between w-full gap-3 cursor-pointer hover:bg-black/5 rounded-2xl py-2 hover:px-3 hover:w-[95%] duration-300 mx-auto">
+              <div class="flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                </svg>
+                <span class="font-bold">Feedback in Slack</span>
+              </div>
+              <span class="block">
+                May, 24
+              </span>
+            </div>
+            <div class="h-[2px] w-full bg-black/10 mt-4"></div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white/50 note cursor-pointer z-[1] rounded-[40px] px-10 py-8 w-72 h-60 flex flex-col items-start justify-end gap-10 absolute -top-28 left-16 -rotate-[10] shadow-sm">
+          <h3 class="text-[#fc8898] text-5xl">Jun 12</h3>
+          <div class=" text-slate-600 font-semibold flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+            </svg>
+            <span>Today</span>
+          </div>
+        </div>
+
+        <div
+          class="bg-white note cursor-pointer z-[2] rounded-[40px] px-10 py-8 w-72 h-60 flex flex-col items-start justify-end gap-10 absolute -top-28 left-20 -rotate-12 shadow-sm">
+          <h3 class="text-[#fc8898] text-5xl">Jun 12</h3>
+          <div class=" text-slate-600 font-semibold flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+            </svg>
+            <span>Today</span>
+          </div>
+        </div>
+
+        <div
+          class="bg-white note cursor-pointer rounded-[40px] px-10 py-8 w-96 h-60 flex flex-col items-start justify-end gap-10 absolute -top-40 right-20 rotate-6 z-[3] shadow-sm">
+          <div class=" text-slate-600 font-semibold flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="m18.375 12.739-7.693 7.693a4.5 4.5 0 0 1-6.364-6.364l10.94-10.94A3 3 0 1 1 19.5 7.372L8.552 18.32m.009-.01-.01.01m5.699-9.941-7.81 7.81a1.5 1.5 0 0 0 2.112 2.13" />
+            </svg>
+            <span>Notes</span>
+            <span class="w-1 h-1 shrink-0 rounded-full bg-slate-500"></span>
+            <span>1 month</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6 ml-24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3 1.5 1.5 3-3.75" />
+            </svg>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <script type="module" src="/main.js"></script>
