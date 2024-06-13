@@ -96,28 +96,42 @@ items.forEach((item, index) => {
     const isHover1 = details[1].matches(":hover");
     const isHover2 = details[2].matches(":hover");
     if (isHover0 || isHover1 || isHover2) return;
-    gsap.to(container, {
-      width: 410,
-      height: 48,
-      y: 0,
-      borderRadius: 16,
-      duration: duration,
-      ease: ease,
-    });
-    gsap.to(details[0], {
-      opacity: 0,
-      duration: 0,
-      zIndex: 1,
-    });
-    gsap.to(details[1], {
-      opacity: 0,
-      duration: 0,
-      zIndex: 1,
-    });
-    gsap.to(details[2], {
-      opacity: 0,
-      duration: 0,
-      zIndex: 1,
-    });
+    mouseleaveDetails();
   });
 });
+
+details.forEach((detail) => {
+  detail.addEventListener("mouseleave", () => {
+    const isHover0 = items[0].matches(":hover");
+    const isHover1 = items[1].matches(":hover");
+    const isHover2 = items[2].matches(":hover");
+    if (isHover0 || isHover1 || isHover2) return;
+    mouseleaveDetails();
+  });
+});
+
+function mouseleaveDetails() {
+  gsap.to(container, {
+    width: 410,
+    height: 48,
+    y: 0,
+    borderRadius: 16,
+    duration: duration,
+    ease: ease,
+  });
+  gsap.to(details[0], {
+    opacity: 0,
+    duration: 0,
+    zIndex: 1,
+  });
+  gsap.to(details[1], {
+    opacity: 0,
+    duration: 0,
+    zIndex: 1,
+  });
+  gsap.to(details[2], {
+    opacity: 0,
+    duration: 0,
+    zIndex: 1,
+  });
+}
